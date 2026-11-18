@@ -1,0 +1,385 @@
+print("==========================================")
+print("             PYTHON TUTORIAL              ")
+print("==========================================")
+student_name = input("Enter your student name: ")
+print("Welcome to Python Tutorial!", student_name)
+while True:
+    print("\n==========================================")
+    print("                MAIN MENU                 ")
+    print("==========================================")
+    print("[1] PRELIM")
+    print("[2] MIDTERM")
+    print("[3] FINALS")
+    print("[4] EXIT")
+    term = input("Choose a term: ")
+    if term == "4":
+        print("Thank you for using Python Tutorial!")
+        break
+    if term == "1" or term == "2" or term == "3":
+        print("\n==========================================")
+        print("               SUBJECT MENU               ")
+        print("==========================================")
+        print("[1] Programming")
+        print("[2] Problem Solving")
+        subject = input("Choose a      subject: ")
+        if subject == "1" or subject == "2":
+            print("\n==========================================")
+            print("                LESSON MENU               ")
+            print("==========================================")
+            if term == "1" and subject == "1":
+                print("PRELIM - PROGRAMMING")
+                print("[1] Introduction to Python")
+                print("[2] Basic Syntax")
+                print("[3] Printing Output")
+                print("[4] Python Comments")
+                print("[5] Variables")
+                print("[6] Basic Data Types in Python")
+                print("[7] Arithmetic Operators")
+                print("[8] Basic Input and Output")
+            elif term == "1" and subject == "2":
+                print("PRELIM - PROBLEM SOLVING")
+                print("[1] Introduction to Problem Solving")
+                print("[2] Algorithm")
+                print("[3] Pseudocode")
+                print("[4] Arithmetic Operators")
+            elif term == "2" and subject == "1":
+                print("MIDTERM - PROGRAMMING")
+                print("[1] Conditional Statement")
+                print("[2] Logical Operators")
+            elif term == "2" and subject == "2":
+                print("MIDTERM - PROBLEM SOLVING")
+                print("[1] Flowchart")
+                print("[2] Program Logic")
+            elif term == "3" and subject == "1":
+                print("FINALS - PROGRAMMING")
+                print("[1] Introduction to Iteration and Loop")
+            elif term == "3" and subject == "2":
+                print("FINALS - PROBLEM SOLVING")
+                print("[1] If, Elif, Else Statement")
+            lesson = input("Choose a lesson: ")
+            key = term + subject + lesson
+            ques1 = ""
+            ques2 = ""
+            if key == "111":
+                print("\nINTRODUCTION TO PYTHON")
+                print("Python is a high-level programming language.")
+                print("It was created by Guido van Rossum.")
+                print("Python is used to create programs and applications.")
+                print("\nExample:")
+                print('print("Hello, World!")')
+                ques1 = "Who created Python?"
+                choice1 = "A. Guido van Rossum"
+                choice2 = "B. Charles Babbage"
+                correct_ans1 = "A"
+                ques2 = "What is Python?"
+                choice3 = "A. A computer"
+                choice4 = "B. A programming language"
+                correct_ans2 = "B"
+            elif key == "112":
+                print("\nBASIC SYNTAX")
+                print("Syntax refers to the rules of writing code.")
+                print("Python uses indentation to organize code.")
+                print("\nExample:")
+                print('print("Hello")')
+                ques1 = "What does syntax mean?"
+                choice1 = "A. Rules of writing code"
+                choice2 = "B. Computer hardware"
+                correct_ans1 = "A"
+                ques2 = "What is important in Python code?"
+                choice3 = "A. Font size"
+                choice4 = "B. Proper indentation"
+                correct_ans2 = "B"
+            elif key == "113":
+                print("\nPRINTING OUTPUT")
+                print("The print() statement displays information.")
+                print("\nExample:")
+                print('print("Hello, World!")')
+                ques1 = "Which statement displays output?"
+                choice1 = "A. input()"
+                choice2 = "B. print()"
+                correct_ans1 = "B"
+                ques2 = "What will print(5) display?"
+                choice3 = "A. 5"
+                choice4 = "B. print"
+                correct_ans2 = "A"
+            elif key == "114":
+                print("\nPYTHON COMMENTS")
+                print("Comments are ignore by python.")
+                print("They are used to explain the code.")
+                print("Single line comments used a hashtag sign #.")
+                print ("Multi line comments used triple quotation marks, for large explanation.")
+                print("\nExample:")
+                print("# This is a comment")
+                print('print("Hello")')
+                ques1 = "Which symbol is used for a single-line comment?"
+                choice1 = "A. #"
+                choice2 = "B. @"
+                correct_ans1 = "A"
+                ques2 = "Are comments executed by Python?"
+                choice3 = "A. Yes"
+                choice4 = "B. No"
+                correct_ans2 = "B"
+            elif key == "115":
+                print("\nVARIABLES")
+                print("""Variables are used to storage location used to keep data in a program.
+It must start with a letter or underscore.
+It connot start with a number.""")
+                print("\nExample:")
+                print('name = "Ana"')
+                print("age = 18")
+                print("print(name)")
+                ques1 = "What are variables used for?"
+                choice1 = "A. Storing information"
+                choice2 = "B. Drawing pictures"
+                correct_ans1 = "A"
+                ques2 = "Which is a valid variable assignment?"
+                choice3 = "A. 18 = age"
+                choice4 = "B. age = 18"
+                correct_ans2 = "B"
+            elif key == "116":
+                print("\nBASIC DATA TYPES IN PYTHON")
+                print("Data types are categories that tell python what kind of data a variable store.")
+                print("String - text")
+                print("Integer - whole number")
+                print("Float - decimal number")
+                print("Boolean - True or False")
+                print("\nExample:")
+                print('name = "Ana"')
+                print("age = 18")
+                print("grade = 95.5")
+                print("passed = True")
+                ques1 = "Which data type stores whole numbers?"
+                choice1 = "A. Integer"
+                choice2 = "B. String"
+                correct_ans1 = "A"
+                ques2 = "Which data type stores True or False?"
+                choice3 = "A. Float"
+                choice4 = "B. Boolean"
+                correct_ans2 = "B"
+            elif key == "117":
+                print("\nARITHMETIC OPERATORS")
+                print("Arithmetic operators are used for calculations.")
+                print("+ Addition")
+                print("- Subtraction")
+                print("* Multiplication")
+                print("/ Division")
+                print("% Modulus")
+                print("\nExample:")
+                print("print(10 + 5)")
+                ques1 = "Which operator is used for multiplication?"
+                choice1 = "A. +"
+                choice2 = "B. *"
+                correct_ans1 = "B"
+                ques2 = "What is 10 + 5?"
+                choice3 = "A. 15"
+                choice4 = "B. 5"
+                correct_ans2 = "A"
+            elif key == "118":
+                print("\nBASIC INPUT AND OUTPUT")
+                print("input() gets information from the user.")
+                print("print() displays information.")
+                print("\nExample:")
+                print('name = input("Enter name: ")')
+                print("print(name)")
+                ques1 = "Which function gets information from the user?"
+                choice1 = "A. input()"
+                choice2 = "B. print()"
+                correct_ans1 = "A"
+                ques2 = "Which function displays information?"
+                choice3 = "A. input()"
+                choice4 = "B. print()"
+                correct_ans2 = "B"
+            elif key == "121":
+                print("\nINTRODUCTION TO PROBLEM SOLVING")
+                print("""Problem solving is the process of finding")
+a solution to a given problem.
+It involves understanding and planning.""")
+                ques1 = "What is problem solving?"
+                choice1 = "A. Finding a solution"
+                choice2 = "B. Creating a problem"
+                correct_ans1 = "A"
+                ques2 = "What is the purpose of problem solving?"
+                choice3 = "A. Making problems harder"
+                choice4 = "B. Solving a given problem"
+                correct_ans2 = "B"
+            elif key == "122":
+                print("\nALGORITHM")
+                print("""An algorithm is a step-by-step procedure")
+used to solve a problem.""")
+                print("\nExample:")
+                print("1. Start")
+                print("2. Input two numbers")
+                print("3. Add the numbers")
+                print("4. Display the answer")
+                print("5. End")
+                ques1 = "What is an algorithm?"
+                choice1 = "A. Step-by-step instructions"
+                choice2 = "B. Random pictures"
+                correct_ans1 = "A"
+                ques2 = "What does an algorithm contain?"
+                choice3 = "A. Unrelated words"
+                choice4 = "B. Steps to solve a problem"
+                correct_ans2 = "B"
+            elif key == "123":
+                print("\nPSEUDOCODE")
+                print("Pseudocode describes program steps using simple words.")
+                print("\nExample:")
+                print("START")
+                print("INPUT")
+                print("OUTPUT")
+                print("DISPLAY")
+                print("END")
+                ques1 = "What is pseudocode?"
+                choice1 = "A. A simple description of program steps"
+                choice2 = "B. A computer keyboard"
+                correct_ans1 = "A"
+                ques2 = "Which word can be used to show the beginning?"
+                choice3 = "A. STOP"
+                choice4 = "B. START"
+                correct_ans2 = "B"
+            elif key == "124":
+                print("\nARITHMETIC OPERATORS")
+                print("Arithmetic operators perform calculations.")
+                print("+ Addition")
+                print("- Subtraction")
+                print("* Multiplication")
+                print("/ Division")
+                print("% Modulus")
+                print("\nExample:")
+                print("10 + 5 = 15")
+                ques1 = "Which operator is used for addition?"
+                choice1 = "A. +"
+                choice2 = "B. /"
+                correct_ans1 = "A"
+                ques2 = "What is 10 - 5?"
+                choice3 = "A. 15"
+                choice4 = "B. 5"
+                correct_ans2 = "B"
+            elif key == "211":
+                print("\nCONDITIONAL STATEMENT")
+                print("Conditional statements allow a program to make decisions.")
+                print("They use if, elif, and else.")
+                print("\nExample:")
+                print("age = 18")
+                print("if age >= 18:")
+                print('    print("Adult")')
+                print("else:")
+                print('    print("Minor")')
+                ques1 = "Which keyword checks a condition?"
+                choice1 = "A. if"
+                choice2 = "B. print"
+                correct_ans1 = "A"
+                ques2 = "Which keyword handles the alternative?"
+                choice3 = "A. input"
+                choice4 = "B. else"
+                correct_ans2 = "B"
+            elif key == "212":
+                print("\nLOGICAL OPERATORS")
+                print("Logical operators combine conditions.")
+                print("and - both conditions must be True")
+                print("or - at least one condition is True")
+                print("not - reverses a condition.")
+                print("\nExample:")
+                print("age >= 18 and age <= 25")
+                ques1 = "Which operator requires both conditions to be True?"
+                choice1 = "A. and"
+                choice2 = "B. or"
+                correct_ans1 = "A"
+                ques2 = "Which operator reverses a condition?"
+                choice3 = "A. and"
+                choice4 = "B. not"
+                correct_ans2 = "B"
+            elif key == "221":
+                print("\nFLOWCHART")
+                print("A flowchart is a diagram that shows")
+                print("the steps of solving a problem.")
+                print("It uses symbols and arrows.")
+                ques1 = "What does a flowchart show?"
+                choice1 = "A. Steps of a process"
+                choice2 = "B. Random letters"
+                correct_ans1 = "A"
+                ques2 = "What connects the steps in a flowchart?"
+                choice3 = "A. Paragraphs"
+                choice4 = "B. Arrows"
+                correct_ans2 = "B"
+            elif key == "222":
+                print("\nPROGRAM LOGIC")
+                print("Program logic is the sequence of steps")
+                print("used to make a program work correctly.")
+                print("\nExample:")
+                print("1. Get two numbers")
+                print("2. Add the numbers")
+                print("3. Display the result")
+                ques1 = "What is program logic?"
+                choice1 = "A. Correct sequence of steps"
+                choice2 = "B. Random instructions"
+                correct_ans1 = "A"
+                ques2 = "What should a program have?"
+                choice3 = "A. Unrelated steps"
+                choice4 = "B. Organized instructions"
+                correct_ans2 = "B"
+            elif key == "311":
+                print("\nINTRODUCTION TO ITERATION AND LOOP")
+                print("A loop repeats a block of code.")
+                print("Python has while and for loops.")
+                print("\nExample:")
+                print("for number in range(1, 4):")
+                print("    print(number)")
+                ques1 = "What does a loop do?"
+                choice1 = "A. Repeats code"
+                choice2 = "B. Deletes code"
+                correct_ans1 = "A"
+                ques2 = "Which is a Python loop?"
+                choice3 = "A. display"
+                choice4 = "B. while"
+                correct_ans2 = "B"
+            elif key == "321":
+                print("\nIF, ELIF, ELSE STATEMENT")
+                print("if checks the first condition.")
+                print("elif checks another condition.")
+                print("else runs when the conditions are False.")
+                print("\nExample:")
+                print("grade = 90")
+                print("if grade >= 90:")
+                print('    print("Excellent")')
+                print("elif grade >= 75:")
+                print('    print("Passed")')
+                print("else:")
+                print('    print("Failed")')
+                ques1 = "What does elif do?"
+                choice1 = "A. Checks another condition"
+                choice2 = "B. Ends the computer"
+                correct_ans1 = "A"
+                ques2 = "When does else run?"
+                choice3 = "A. When the first condition is True"
+                choice4 = "B. When the conditions above are False"
+                correct_ans2 = "B"
+            else:
+                print("Invalid lesson choice!")
+            if ques1 != "":
+                score = 0
+                print("\n========== SHORT QUIZ ==========")
+                print("\nQ1.", ques1)
+                print(choice1)
+                print(choice2)
+                choose = input("Choose answer (A/B): ").upper()
+                if choose == correct_ans1:
+                    score = score + 1
+                    print("Correct!")
+                else:
+                    print("Incorrect!")
+                print("\nQ2.", ques2)
+                print(choice3)
+                print(choice4)
+                choose = input("Choose answer (A/B): ").upper()
+                if choose == correct_ans2:
+                    score = score + 1
+                    print("Correct!")
+                else:
+                    print("Incorrect!")
+                print("\nYour Score:", score, "/ 2")
+        else:
+            print("Invalid subject choice!")
+    else:
+        print("Invalid term choice!")
+        
